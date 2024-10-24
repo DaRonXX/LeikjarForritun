@@ -1,10 +1,10 @@
 i. Scene view
-Þetta er vinnusvæðið þar sem þú getur skoðað, breytt og stjórnað hlutum í senunni þinni. Þetta er byggingarvettvangur þar sem þú setur upp leikhluti (game objects), lýsingu, myndavélar og aðra þætti.
+hér getur þú skoðað, breytt og stjórnað hlutum í senunni. Þetta er byggingarvettvangur þar sem þú setur upp leikhluti (game objects), lýsingu, myndavélar og aðra hluti.
 ii. Game view
-Hér sérðu senuna eins og hún mun líta út í leiknum þegar hann er keyrður. Þetta er forskoðun á því hvernig lokaútkoman verður þegar þú spilar leikinn.
+Hér sérðu senuna eins og hún mun líta út í leiknum þegar hann er keyrður.
 iii. Project
-Í þessum glugga eru öll gögnin (assets) sem eru notuð í verkefninu þínu, svo sem skrár, eins og textúrir, hljóð, handrit og fyrirmyndir. Hér hefur þú skipulag yfir öll auðlindaskrár sem tilheyra verkefninu.
+Í þessum glugga eru öll gögnin (assets) sem eru notuð í verkefninu svo sem skrár, eins og texti, hljóð, handrit og fyrirmyndir. Hér hefur þú skipulag yfir öll skrár sem tilheyra verkefninu.
 iv. Hierarchy
-Þessi gluggi sýnir alla leikhluti (game objects) sem eru í núverandi senu í trjáskipulagi. Hann veitir yfirsýn yfir hvar hlutirnir eru staðsettir í senu og samband þeirra á milli (t.d. foreldra-barn tengsl).
+Þessi gluggi sýnir alla leikhluti (game objects) sem eru í núverandi senuni. Hann veitir yfirsýn yfir hvar hlutirnir eru í senu og samband þeirra á milli (t.d. foreldra-barn tengsl).
 v. Inspector
-Í Inspector-glugganum getur þú séð og breytt eiginleikum og stillingum fyrir valinn leikhlut eða auðlind. Hann sýnir allar breytur og íhluti sem tengjast þeim leikhlut sem þú ert að vinna með.
+Í Inspector glugganum getur þú séð og breytt eiginleikum og stillingum fyrir valinn leikhlut eða auðlind. Hann sýnir allar breytur og íhluti sem tengjast þeim leikhlut sem þú ert að vinna með.
