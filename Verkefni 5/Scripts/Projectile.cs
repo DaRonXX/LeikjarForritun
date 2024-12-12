@@ -11,26 +11,26 @@ public class Projectile : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
-    // hendir projectile
+    // Hendir projektili í ákveðna stefnu með tilteknum krafti
     public void Launch(Vector2 direction, float force)
     {
         rigidbody2d.AddForce(direction * force);
     }
 
-    // Detectar collision 
+    // Greinir árekstur
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Enemy"))
+        if (collision.collider.CompareTag("Enemy")) // Ef árekstur er við óvin
         {
-            // eiðileggir ovin
+            // Eiðileggur óvininn
             Destroy(collision.collider.gameObject);
         }
 
-        // eiðir projectile
+        // Eiðileggur sjálft projectile
         Destroy(gameObject);
     }
 
-    // eiðir projectile eftir 2 sekondur
+    // Eiðileggur projectile eftir 2 sekúndur
     void Start()
     {
         Destroy(gameObject, 2f);

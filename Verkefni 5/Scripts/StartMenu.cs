@@ -4,32 +4,32 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
-    public GameObject startMenu; // beinir til start menuið
-    public Button startButton;   // beinir til Start button
-    public Button quitButton;    // beinir til Quit button
+    public GameObject startMenu; // Vísun á start menu
+    public Button startButton;   // Vísun á Start hnappinn
+    public Button quitButton;    // Vísun á Quit hnappinn
 
     private void Start()
     {
-        // pásar í byrjun
+        // Stoppar leikinn í byrjun
         Time.timeScale = 0f;
 
-        startButton.onClick.AddListener(StartGame);
-        quitButton.onClick.AddListener(QuitGame);
+        startButton.onClick.AddListener(StartGame); // Tengir Start leik til að hefja leik
+        quitButton.onClick.AddListener(QuitGame);   // Tengir Quit leik til að loka leik
     }
 
     private void StartGame()
     {
-        // byrjar leik
+        // Byrjar leikinn
         Time.timeScale = 1f;
 
-        // fellur start menu
+        // Felur start menu
         startMenu.SetActive(false);
     }
 
     private void QuitGame()
     {
-        // lokar leiknum
-        Debug.Log("Quitting Game...");
+        // Lokar leiknum
+        Debug.Log("Lokar leik...");
         Application.Quit();
     }
 }

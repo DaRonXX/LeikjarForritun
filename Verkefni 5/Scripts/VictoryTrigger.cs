@@ -3,35 +3,35 @@ using UnityEngine.UI;
 
 public class VictoryTrigger : MonoBehaviour
 {
-    public GameObject victoryCanvas;  // beinir til victory screen (Canvas)
-    public Button retryButton;        // beinir til retry button
+    public GameObject victoryCanvas;  // Vísun á sigur skjáinn (Canvas)
+    public Button retryButton;        // Vísun á retry hnappinn
 
     private void Start()
     {
-        // passar að vicroty er fallið
+        // Gakktu úr skugga um að sigur skjárinn sé falinn í byrjun
         victoryCanvas.SetActive(false);
 
-        retryButton.onClick.AddListener(RestartScene);
+        retryButton.onClick.AddListener(RestartScene); // Tengir hnappinn við að hefja leikinn aftur
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // sér ef player hefur snert ósýnilega objectið
+        // Athugar hvort spilarinn snerti ósýnilega hlutinn
         if (other.CompareTag("Player"))
         {
-            ShowVictoryScreen();
+            ShowVictoryScreen(); // Sýnir sigur skjáinn
         }
     }
 
-    // Sýnir victory screen
+    // Sýnir sigur skjáinn
     private void ShowVictoryScreen()
     {
-        victoryCanvas.SetActive(true);  // Sýnir victory screen
+        victoryCanvas.SetActive(true);  // Sýnir sigur skjáinn
     }
 
-    // byrjar leikin up á nýtt
+    // Hefur leikinn aftur
     private void RestartScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name); // Endurhlaðar núverandi vettvang
     }
 }
