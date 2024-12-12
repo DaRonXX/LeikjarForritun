@@ -13,4 +13,4 @@
 [Link till verkefni4](./Verkefni4)
 
 
-[Link till verkefni5](./Verkefni5)
+[Link till verkefni5](./Verkefni 5)
